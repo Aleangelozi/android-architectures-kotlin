@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidarchitectureskotlin">
-        <activity android:name=".mvvm.MVVMActivity"></activity>
-        <activity android:name=".mvp.MVPActivity" />
-        <activity android:name=".mvc.MVCActivity" />
+        <activity android:name=".mvvm.MVVMActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".mvp.MVPActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".mvc.MVCActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
