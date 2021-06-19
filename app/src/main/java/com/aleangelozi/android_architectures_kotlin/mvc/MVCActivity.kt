@@ -15,8 +15,8 @@ class MVCActivity : AppCompatActivity() {
     lateinit var adapter: ArrayAdapter<String>
     lateinit var list: ListView
     lateinit var controller: CountriesController
-   lateinit var retryButton: Button
-   lateinit var progress: ProgressBar
+    lateinit var retryButton: Button
+    lateinit var progress: ProgressBar
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,8 +94,7 @@ class MVCActivity : AppCompatActivity() {
 
     fun onError() {
         Toast.makeText(
-            this@MVCActivity, getString(R.string.error_message)
-                    , Toast.LENGTH_SHORT
+            this@MVCActivity, getString(R.string.error_message), Toast.LENGTH_SHORT
         ).show()
         progress.visibility = View.GONE
         list.visibility = View.GONE

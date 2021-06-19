@@ -9,8 +9,12 @@ import java.util.*
 
 class CountriesController(view:MVCActivity) {
 
-    private val view: MVCActivity = view
+    private val context: MVCActivity = view
     private val service: CountriesService = CountriesService()
+
+    init {
+        fetchCountries()
+    }
 
     private fun fetchCountries() {
         service.getCountries()
@@ -23,12 +27,12 @@ class CountriesController(view:MVCActivity) {
                         for (country in t) {
                             countryNames.add(country.countryName)
                         }
-                        view.setValues(countryNames)
+                        context.setValues(countryNames)
                     }
                 }
 
                 override fun onError(e: Throwable?) {
-                    view.onError()
+                    context.onError()
                 }
 
             })
