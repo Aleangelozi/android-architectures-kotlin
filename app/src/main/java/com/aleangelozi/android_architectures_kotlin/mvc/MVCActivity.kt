@@ -39,41 +39,6 @@ class MVCActivity : AppCompatActivity() {
                             listValues[position], Toast.LENGTH_SHORT
                 ).show()
             }
-
-        /*val vals = ArrayList<String>()
-        vals.add("USA")
-        vals.add("Canada")
-        vals.add("UK")
-        vals.add("China")
-        vals.add("Brazil")
-        vals.add("USA")
-        vals.add("Canada")
-        vals.add("UK")
-        vals.add("China")
-        vals.add("Brazil")
-        vals.add("USA")
-        vals.add("Canada")
-        vals.add("UK")
-        vals.add("China")
-        vals.add("Brazil")
-        vals.add("USA")
-        vals.add("Canada")
-        vals.add("UK")
-        vals.add("China")
-        vals.add("Brazil")
-        vals.add("USA")
-        vals.add("Canada")
-        vals.add("UK")
-        vals.add("China")
-        vals.add("Brazil")
-        vals.add("USA")
-        vals.add("Canada")
-        vals.add("UK")
-        vals.add("China")
-        vals.add("Brazil")
-
-        setValues(vals)*/
-
     }
 
     fun setValues(values: List<String>) {

@@ -18,7 +18,7 @@ class CountriesService {
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .build()
         api = retrofit.create(CountriesApi::class.java)
-    }
+   }
 
     fun getCountries() : Single<List<Country>> = api.getCountries()
 }

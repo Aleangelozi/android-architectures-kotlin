@@ -23,6 +23,7 @@ class CountriesController(view:MVCActivity) {
             .subscribeWith(object : DisposableSingleObserver<List<Country>>() {
                 override fun onSuccess(t: List<Country>?) {
                     val countryNames: MutableList<String> = ArrayList()
+
                     if (t != null) {
                         for (country in t) {
                             countryNames.add(country.countryName)
