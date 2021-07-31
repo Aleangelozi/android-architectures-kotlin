@@ -18,7 +18,7 @@ class CountriesController(view:MVCActivity) {
 
     private fun fetchCountries() {
         service.getCountries()
-            .subscribeOn(Schedulers.newThread())
+            .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeWith(object : DisposableSingleObserver<List<Country>>() {
                 override fun onSuccess(t: List<Country>?) {
